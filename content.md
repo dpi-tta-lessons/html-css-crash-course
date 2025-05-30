@@ -1,3 +1,7 @@
+# HTML & CSS Crash Course
+
+Get your first taste of HTML & CSS coding with our crash course.
+
 ## Just text
 
 The web is, mostly, a bunch of text.
