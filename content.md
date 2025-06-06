@@ -9,7 +9,7 @@ The web is, mostly, a bunch of text.
 ```html
 You can learn about the world at Wikipedia.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Most of the incredible value of the internet is based in making it easy to distribute and access information, instantaneously and across any distance.
 
@@ -18,7 +18,7 @@ Most of the incredible value of the internet is based in making it easy to distr
 ```html
 You can learn about the world at <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 With hyperlinks, we can make it easy for our users to **navigate** from URL to URL. This is what makes plain ol' text into **hyper text** (the H and the T in HTML).
 
@@ -35,7 +35,7 @@ In the below example, the entire **syntax** (or "grammar") of the HTML language 
 ```html
 <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 * `<a>` is called the **opening tag**.
 * `</a>` is called the **closing tag**.
@@ -63,7 +63,7 @@ Consider this HTML:
 ```html
 <a href="https://www.google.com/">Link</a>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 <!-- * Within that example, the `href` and the `"https://www.google.com/"` are known, respectively, as...
 * an "element".
@@ -83,7 +83,7 @@ There's a very special attribute we can use to change how an element looks — `
 ```html
 You can learn about the world at <a style="color: red" href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 By adding the attribute `style="color: red"`, we have changed the color of the link.
 
@@ -107,7 +107,7 @@ You can have multiple declarations within the same `style` attribute, but you mu
 ```html
 You can learn about the world at <a style="color: red; font-size: 50px" href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 As you can see, the `font-size` property is how we can change how big text is. In this example, we're using the `px` unit to indicate that we want the text to be 50 pixels tall. There are many other units to specify dimensions, which we'll look at soon.
 
@@ -127,14 +127,14 @@ In order to give ourselves a hook to hang CSS on, we can wrap the content in a `
 ```html
 You can <span>learn about the world</span> at <a style="color: red; font-size: 50px" href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 At first, it looks like nothing changed. And it didn't. But now that we have an element, we can add a `style` attribute to it:
 
 ```html
 You can <span style="font-style: italic">learn about the world</span> at <a style="color: red; font-size: 50px" href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 As you can see, the `font-style` property is how we choose between normal and italic text.
 
@@ -168,7 +168,7 @@ You can <span>learn about the world</span> at <a style="color: red; font-size: 5
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png">
 ```
-{: .language-html .live-code }
+{: .repl }
 
 ## The HTML family tree
 
@@ -177,7 +177,7 @@ Elements can contain other elements:
 ```html
 <span style="color: red">This is the parent element, and <a style="font-weight: bold">this is the child element.</a> Over here I'm back in the parent element.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 * The outer element is known as the "parent element". The inner element is known as the "child element".
 * One parent element can have multiple children.
@@ -209,7 +209,7 @@ world at
 
 <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>.
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Notice that, despite all the spaces and new lines I added to the code, the code is **interpreted** and rendered by the browser the same as the previous examples — the whole sentence is on the same line.
 
@@ -226,7 +226,7 @@ So, then: how can we position content around the page, rather than all on the sa
 
 <span>Another good place to learn is Khan Academy.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Right now, they run into each other and form a wall of text. What's the solution?
 
@@ -263,7 +263,7 @@ How can we make an element act as a block instead of inline? With the `display: 
 
 <span style="display: block">Another good place to learn is Khan Academy.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Voila! The two spans are now blocks, so they take up the full width of the page, and are stacked vertically on top of one another.
 
@@ -276,7 +276,7 @@ We're going to need a _lot_ of block level elements. It would be a pain to have 
 
 <div>Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 A `<div>` is just a `<span>` with `display: block` already set. We'll end up using `<div>`s even more than `<span>`s to add structure to our HTML documents, because in the modern web apps we need a _lot_ of blocks.
 
@@ -308,7 +308,7 @@ First, `border-style`:
 
 <div style="border-style: dotted;">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 You can also try the values `solid`, `dashed`, or `double`. (The default value of `border-style` for an element is `none`.)
 
@@ -319,7 +319,7 @@ The default color for borders is whatever `color` the text of that element is se
 
 <div style="border-style: dotted; border-color: blue;">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 The default width of a border is 1px. We can customize that with the `border-width` property:
 
@@ -328,7 +328,7 @@ The default width of a border is 1px. We can customize that with the `border-wid
 
 <div style="border-style: dotted; border-color: blue; border-width: 10px">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 There's a handy shortcut for specifying style, color, and width all at once — the `border` property:
 
@@ -337,14 +337,14 @@ There's a handy shortcut for specifying style, color, and width all at once — 
 
 <div style="border: dotted blue 10px">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 If you want to, you can set the border for each side individually, with the `border-top`, `border-right`, `border-bottom`, and `border-left` properties:
 
 ```html
 <div style="border-top: solid blue 10px; border-right: solid red 10px; border-bottom: solid green 10px; border-left: none">You can learn about the world at Wikipedia.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 ### Rounding corners with _border-radius_
 
@@ -353,7 +353,7 @@ You can round the corners of an element using the `border-radius` property:
 ```html
 <div style="border: solid blue 10px; border-radius: 20px">You can learn about the world at Wikipedia.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 ## _text-align_
 
@@ -364,7 +364,7 @@ We can control the alignment of text within a parent with the `text-align` prope
 
 <div style="border: thin red solid; text-align: right">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 ## The box model
 
@@ -384,7 +384,7 @@ For example:
 
 <div style="width: 200px; padding: 30px; border: solid blue 10px; margin: 20px">Another good place to learn is Khan Academy.</div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 You can also individually set `padding-top`, `padding-bottom`, `padding-left`, `padding-right`, `margin-top`, `margin-bottom`, `margin-left`, and `margin-right`.
 
@@ -419,7 +419,7 @@ CSS provides a better way: **style rules**. First, we need a `<style>` element i
 
 <span style="display: block">I'm a span, unlike the above two blocks, which are divs.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 In the style rule:
 
@@ -431,7 +431,7 @@ div {
   margin: 30px;
 } 
 ```
-{: .language-css .live-code }
+{: .repl }
 
 * `div` is called the **selector**.
   * This particular selector is saying to target all of the `<div>` elements in the document. This is why the border is not being applied to the third block in the document; it's a `<span>`, not a `<div>`.
@@ -484,7 +484,7 @@ In the same example, what if we wanted to make text in the second `div` red, but
 
 <span style="display: block">I'm a span, unlike the above two blocks, which are divs.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Since `div` is a tag-type selector, if we add `color: red` to the declaration block, it will apply to _all_ `<div>` elements in the document:
 
@@ -506,7 +506,7 @@ Since `div` is a tag-type selector, if we add `color: red` to the declaration bl
 
 <span style="display: block">I'm a span, unlike the above two blocks, which are divs.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 We could achieve the more precise targeting we want by dropping back down to an inline `style=""` attribute:
 
@@ -526,7 +526,7 @@ We could achieve the more precise targeting we want by dropping back down to an 
 
 <span style="display: block">I'm a span, unlike the above two blocks, which are divs.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 This does what we want, but we've lost the nice ability to affect hundreds or thousands of elements at once with a style rule.
 
@@ -552,7 +552,7 @@ What's the solution? A **class-level selector**:
 
 <span class="danger" style="display: block">I'm a span, unlike the above two blocks, which are divs.</span>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 In the above example:
 
@@ -607,7 +607,7 @@ As discussed above, the default system that an element uses to position its chil
   <div class="child">C</div>
 </div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 The three inner `div`s have the class `child`, so they have a border, etc. They are still vertically stacked on top of each other even though they are narrow, because they are blocks and the parent element uses flow to lay them out.
 
@@ -636,7 +636,7 @@ If we want to change the parent's layout mode to flexbox, we use the `display: f
   <div class="child">C</div>
 </div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Boom! All of a sudden, within the parent element, we're in a whole new world. Within an element that is `display: flex`, "block" and "inline" don't really mean anything anymore. Those terms are relevant for typesetting, but flexbox is for more dynamic, responsive, app-type layouts.
 
@@ -685,7 +685,7 @@ When `flex-direction` is `row`, the `justify-content` property determines how an
   <div class="child">C</div>
 </div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Try out all five values for `justify-content` in the runnable code block above.
 
@@ -728,7 +728,7 @@ When `flex-direction` is `row`, the `align-items` property determines how childr
   <div class="child">C</div>
 </div>
 ```
-{: .language-html .live-code }
+{: .repl }
 
 Try out the values for `align-items` in the runnable code block above.
 
