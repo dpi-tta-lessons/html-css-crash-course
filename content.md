@@ -159,7 +159,7 @@ There's a very special element that allows us to embed images right into our doc
 
 First, the image we want to embed needs to already be on the internet, and have its own URL. We'll talk about how to do that soon, but for now we can use this image that's hosted by Wikipedia at the following URL:
 
-[https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png)
+[https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png](https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/263px-Wikipedia-logo-v2.svg.png){ .text-break }
 
 Next, given a URL like this, we can use it as the value for the `src` attribute of an `<img>` element to embed it in our page:
 
